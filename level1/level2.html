@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- Level 2 Code -->
+<html>
+  <head>
+<title> Level 2</title>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<link rel="stylesheet" href=" level1.css">
+  </head>
+  <body>
+    <div class="dissapear" id="intro">
+<h1><span class="auto-type"></span> </h1>
+    </div>
+    <script>
+var typed = new Typed(".auto-type", {
+strings: ["Congratulations on making it to level 2! Head Detective Cadet will inform you on your next case.", "Head Detective Cadet: At 2:00 AM the towns museum's alarm was triggered, At 2:06 AM  police arrived at scene, and no one was found. I will give you my notes to further set the scene for you", "The list of suspects we gathered are: Devyn Dahmer, Glifard Gliff, and Williams Dej"], 
+  typeSpeed: 30,
+  fadeOut: true,
+  fadeOutClass: 'type-fade-out',
+  fadeOutDelay: 1000,
+  loop: false,
+   showCursor: false,
+        onComplete: function () {
+          setTimeout(function () {
+            document.getElementById("intro").style.display = "none";
+          }, 2000);
+        }
+});
+
+    </script>
+<br>
+<p> <b> Detective Cadet: </b> At 2:00 AM the towns museum's alarm was triggered, At 2:06 AM  police arrived at scene, and no one was found </p>
+
+<img id="map" src="Map.png" style="width:1000px; height:700px">
+<br>
+<p> <b> Listed Suspects: </b></p>
+<img id="Devyn Dahmer" src="devyn.png">
+ <img id="Glifard Gliff" src="glifardgliff.png">
+<img id="Williams Dej" src="williamsdej.png">
+<p> <b> Detctive Cadets notes: </b> </p>
+<br> <div class="notes">
+  <p>  -Leonardo Da Vinci painting was stolen
+    <br>
+     -Security footage had been looped
+<br>
+-Window latch removed with precision tools
+</div>
+</p>
+<br>
+
+<button onclick="window.location.href='scene2.html'">Go to Scene</button>
+
+<script>
+function criminal() {
+  let guess = prompt("Guess the criminal");
+  let level3link = document.getElementById("level3link");
+
+  if (guess === "Devyn Dahmer") {
+    level3link.innerHTML = "<a href='level3.html'>Good Job! Click here to continue</a>";
+    level3link.style.display = "block";
+    level3link.style.fontSize = "24px"; // Set font size here
+  } else {
+    level3link.innerHTML = "Guess again!";
+    level3link.style.display = "block";
+    level3link.style.fontSize = "24px"; // Set font size here too
+  }
+}
+</script>
+
+
+    <button onclick="criminal();" class="guess">Guess the criminal</button>
+
+<span id="level3link" class="guess"></span>
+
+
+
+
+
+  </body>
+  </html>
