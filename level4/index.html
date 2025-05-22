@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<title> Level 4 </title>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<link rel="stylesheet" href="level4.css">
+<script src="level4.js"> </script>
+  </head>
+  <body>
+    <div class="dissapear" id="intro">
+
+<h1><span class="auto-type"></span> </h1>
+    </div>
+    <script>
+var typed = new Typed(".auto-type", {
+strings: ["Hello Detective, welcome to Level 4. Head Detective Cadet will catch you up with your investigation.",
+"Detective Cadet: On an early Sunday morning at 6:04am at the harbor someone stole a mysterious crate from a small fishing boat.",
+" The owner of the boat Mr Smith informed us that the crate contained various building materials and other supplies.",
+" Head Detective Cadet gave us the list of suspects",
+"The suspects are the following Bently Hudson, Williams Dej, Devyn Dahmer, Gilfard Gliff and Shawn Cinna"],
+  typeSpeed: 30,
+  fadeOut: true,
+  fadeOutClass: 'type-fade-out',
+  fadeOutDelay: 1000,
+  loop: false,
+   showCursor: false,
+        onComplete: function () {
+          setTimeout(function () {
+            document.getElementById("intro").style.display = "none";
+          }, 2000);
+        }
+});
+
+    </script>
+<br>
+<img id="map" src="Map.png"style="width: 500px; height: auto;">
+<br>
+<p> Note Williams Dej is 4.7 feet not 47 feet </p>
+<p> <b> Listed Suspects: </b></p>
+    <br>
+      <img id="Bently Hudson" src="Bently.png" class="profilepic">   
+    <img id="Williams Dej(note height is 4.7 not 47)" src="WilliamsDej.png"class="profilepic">
+    <img id="Devyn Dahmer" src="Devyn.png"class="profilepic">
+    <img id="Gilfard Gliff" src="Gilfard.png"class="profilepic">
+    <img id="Shawn Cinna" src="Shawn.png"class="profilepic">
+<p> <b> Interrogation: </b> </p>
+<br>
+<p> <b>Shawn Cinna:</b> It could not have been me, I was already at school which is near the warehouse. </p>
+<br>
+<p>  <b>Williams Dej: </b> I was sleeping in my house which is between riverside and blue lagoon. </p>
+<br>
+<p>   <b>Bently Hudson:</b> I had a nightshift at the police station, you can check records.</p>
+<br>
+ <p>   <b>Devyn Dahmer: </b> I was talking to people at the harbor tring to get a job. </p>
+<br>
+<p>    <b>Gilfard Gliff: </b> I was asleep at that time and I live with my mom near the casino.
+I could not have gotten there in time. </p>
+<br>
+<button onclick="window.location.href='scene4.html'">Go to Scene</button>
+<br>
+<p> For this case there is only one person who committed the crime so type the name in this format Layla Cadet </p>
+   <button onclick="criminal()">Who is guilty?</button>
+<br>
+   <button onclick="conclusion()">Conclusion</button>
+ </body>
+  </html>

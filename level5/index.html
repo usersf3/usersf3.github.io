@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<title> Level 5 </title>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<link rel="stylesheet" href="leve55.css">
+<script src="level5.js"> </script>
+  </head>
+  <body>
+    <div class="dissapear" id="intro">
+
+<h1><span class="auto-type"></span> </h1>
+    </div>
+    <script>
+var typed = new Typed(".auto-type", {
+strings: ["Hello Detective, welcome to Level 5. Head Detective Cadet will catch you up with your investigation.", 
+"Detective Cadet: At 3:45am head detective Cadet arrived at the Great Lake and found a dead body with no stab wounds and was a 48 year old man named Garry Yoo,  who lived at the Blue Lagoon.",
+" The family of the man informed us that he was going to Hilton Head.",
+" According to the Yoo family, Garry and his best friend Williams Dej used to go fishing almost weekly at the Great Lake until they got into a big fight last year.",
+" Who killed Garry Yoo? Why was his body almost untouched in the lake?",
+"What happened between Garry and Williams and what was the fight about? Is Williams connected to the case? ", 
+"Here is the list of suspects we have collected for this crime: Williams Dej, Christine Crow, Lee Beery Shush, Devyn Dahmer, Java Skripte, Valentino Carolino and Cameron Carter", 
+"Now, use everything you see to figure out the one behind the crime. Goodluck!!"],
+  typeSpeed: 30,
+  fadeOut: true,
+  fadeOutClass: 'type-fade-out',
+  fadeOutDelay: 1000,
+  loop: false,
+   showCursor: false,
+        onComplete: function () {
+          setTimeout(function () {
+            document.getElementById("intro").style.display = "none";
+          }, 2000);
+        }
+});
+
+    </script>
+<br>
+<img id="map" src="Map.png" style="width: 500px; height: auto;">
+<br>
+<p> Note Williams Dej is 4.7 feet not 47 feet </p>
+<p> Cameron Carels weapons are an iphone not his description </p>
+<p> <b> Listed Suspects: </b></p>
+    <br>
+    <img id="Devyn Dahmer" src="Devyn.png" class="profilepic"> </img>
+      <img id="Cameron Cartel (note description)" src="Cameron.png" class="profilepic"> </img>
+    <img id="Valentina Carolina" src="Valentino.png" class="profilepic"> </img>
+    <img id="Williams Dej(note height is 4.7 not 47)" src="WilliamsDej.png"class="profilepic"> </img>
+    <img id="Lee Beery Shush" src="Lee.png"class="profilepic"> </img>
+    <img id="Java Skripte" src="Java.png"class="profilepic"> </img>
+    <img id="Christine Crow" src="Christine.png"class="profilepic"> </img>
+<p> <b> Interrogation: </b> </p>
+<br>
+<p> <b>Mary Yoo (wife of Garry):</b> We live at the Blue Lagoon next to the train station. 
+Garry worked as a businessman for the bank. 
+I remember dropping him off at the train station at 8pm last night as his train was at 10pm. 
+A young boy was working there at the train station named Java Skripte, he and Garry were the only ones there. 
+I then went out with my friends and stayed at my friend's house near the casino. 
+Garry and Williams have been bestfriends since ages and one day went to the casino. 
+Garry accused Williams of cheating on the slot machines. 
+The two of them started fighting and a server, Valentino Carolino, had to stop their fight. 
+Valentino has a criminal record and people always said she was after Garry as she claimed he stole her husband's job.
+</p>
+<br>
+<p>
+    <b>Valentino Carolino: </b> Garry lied on his resume to get that job, but I wouldn't kill him so my husband could get the job. 
+I was working at the casino last night and talked to some friends. 
+I also saw Christine Crow and Cameron Carter going for a walk towards the Great Lake, why don't you question them?
+</p>
+<br>
+<p>
+   <b>Christine Crow and Cameron Carter:</b> We were going on a walk after visiting the new french restaurant near the bank. 
+And for reference we were walking around the bank, we never went near the Great Lake, as I had to upload my review of the restaurant that night.
+</p>
+<br>
+<p>
+    <b>Java Skripte: </b> Yes, I was at the train station working my later night shift, but Garry never boarded the
+    man looked like a nerd. 
+Anyways at like 9pm Garry and the others left the train station and started walking towards the warehouse.
+</P>
+<br>
+<p>
+    <b>Lee Beery Shush and Devyn Dahmer: </b> Yeah we were in the warehouse with Garry not to kill him, but to give him the business plans he needed to take with him to Hilton Head to discuss our business. 
+After that we went to the casino and we saw Valentino there.
+ </p>
+<br>
+<button onclick="window.location.href='scene.html'">Go to Scene</button>
+<br>
+<p> When typing in who the crimianl is type it in in this format Layla Cadet</p>
+   <button onclick="criminal()">Who is guilty?</button>
+<br>
+ <button onclick="conclusion()">Conclusion</button>
+ </body>
+  </html>
