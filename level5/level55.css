@@ -21,17 +21,25 @@ button {
   background-image: url('');
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100px;
-  height: 50px;
+  width: 200px;
+  height: 200px;
   background-color: #ccc; 
   color: white;
   text-align: center;
+ font-size: 40px;
   line-height: 50px; 
   border: none;
   cursor: pointer; 
   outline: none; 
+ border: 1px solid black;
 }
  .profilepic {
 height: 200px; 
   border-radius: 15%; 
  }
+
+.guess {
+position: absolute;
+right: 0;
+
+}
