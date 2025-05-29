@@ -89,6 +89,27 @@ After that we went to the casino and we saw Valentino there.
 <p> When typing in who the crimianl is type it in in this format Layla Cadet</p>
    <button onclick="criminal()">Who is guilty?</button>
 <br>
- <button onclick="conclusion()">Conclusion</button>
+ <button onclick="conclusion()">Conclusion</button
+  <button onclick="criminal();" class="guess">Guess the criminal</button>
+  <span id="level5link" class="guess"></span>
+<script>
+    function criminal() {
+      let guess = prompt("Guess the criminal");
+      let level6link = document.getElementById("level6link");
+
+      if (guess === "Shawn Cinna") {
+        level6link.innerHTML ="<a href='../level6/index.html'>Good Job! Click here to continue</a>";
+        level6link.style.display = "block";
+        level6link.style.fontSize = "40px"; 
+      } else {
+        level6link.innerHTML = "Guess again!";
+        level6link.style.display = "block";
+        level6link.style.fontSize = "40px";
+      }
+    }
+  </script>
+
+
+                                            
  </body>
   </html>
