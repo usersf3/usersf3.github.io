@@ -25,6 +25,8 @@ height: 200px;
 .guess {
 position: absolute;
 right: 0;
+
+}
 button {
   background-image: url('');
   background-repeat: no-repeat;
