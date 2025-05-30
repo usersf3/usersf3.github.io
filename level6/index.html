@@ -106,7 +106,7 @@ I have to work double shifts now at the trainstation to save up for college, whi
 
 
 
-  <button onclick="criminal();" class="guess">Guess the criminal</button>
+  <button onclick="criminal();" class="guess" id="guess">Guess the criminal</button>
   <span id="level7link" class="guess"></span>
 <script>
     function criminal() {
@@ -117,6 +117,7 @@ I have to work double shifts now at the trainstation to save up for college, whi
         level7link.innerHTML ="<a href='../level7/index.html'>Good Job! Click here to continue</a>";
         level7link.style.display = "block";
         level7link.style.fontSize = "40px"; 
+         document.getElementById("guess").style.display= "none";
       } else {
         level7link.innerHTML = "Guess again!";
         level7link.style.display = "block";
