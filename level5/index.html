@@ -87,7 +87,7 @@ After that we went to the casino and we saw Valentino there.
 <button onclick="window.location.href='scene.html'">Go to Scene</button>
 <br>
  <button onclick="conclusion()">Conclusion</button>
-  <button onclick="criminal();" class="guess">Guess the criminal</button>
+  <button onclick="criminal();" class="guess" id="guess">Guess the criminal</button>
   <span id="level6link" class="guess"></span>
 <script>
     function criminal() {
@@ -98,6 +98,7 @@ After that we went to the casino and we saw Valentino there.
         level6link.innerHTML ="<a href='../level6/index.html'>Good Job! Click here to continue</a>";
         level6link.style.display = "block";
         level6link.style.fontSize = "40px"; 
+         document.getElementById("guess").style.display= "none";
       } else {
         level6link.innerHTML = "Guess again!";
         level6link.style.display = "block";
