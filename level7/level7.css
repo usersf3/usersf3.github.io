@@ -17,21 +17,32 @@ font-size: 40px;
   max-width: 800px;
 }
 
-button {
-  background-image: url('');
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100px;
-  height: 50px;
-  background-color: #ccc; 
-  color: white;
-  text-align: center;
-  line-height: 50px; 
-  border: none;
-  cursor: pointer; 
-  outline: none; 
-}
+
  .profilepic {
 height: 200px; 
   border-radius: 15%; 
  }
+button {
+  background-image: url('');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  background-color: #ccc; 
+  color: white;
+  text-align: center;
+ font-size: 40px;
+  line-height: 50px; 
+  border: none;
+  cursor: pointer; 
+  outline: none; 
+ border: 1px solid black;
+}
+
+
+
+.guess {
+position: absolute;
+right: 0;
+
+}
