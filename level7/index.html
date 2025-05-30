@@ -57,7 +57,7 @@ strings: ["Hello Detective, welcome to Level 7. Head Detective Cadet will catch 
 <irst and then the accomplice, like so Layla Cadet and Arrow Bar</p>
 
 <br>
-  <button onclick="criminal();" class="guess">Guess the criminal</button>
+  <button onclick="criminal();" class="guess" id="guess">Guess the criminal</button>
   <span id="level8link" class="guess"></span>
 <script>
     function criminal() {
@@ -68,6 +68,7 @@ strings: ["Hello Detective, welcome to Level 7. Head Detective Cadet will catch 
         level8link.innerHTML ="<a href='../level8/index.html'>Good Job! Click here to continue</a>";
         level8link.style.display = "block";
         level8link.style.fontSize = "40px"; 
+         document.getElementById("guess").style.display= "none";
       } else {
         level8link.innerHTML = "Guess again!";
         level8link.style.display = "block";
