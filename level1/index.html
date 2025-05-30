@@ -58,11 +58,13 @@ function criminal() {
     level2link.innerHTML = "<a href='../level2/level2.html'>Good Job! Click here to continue</a>";
     level2link.style.display = "block";
    level2link.style.fontSize = "40px"; 
+    document.getElementById("guess").style.display= "none";
   } else {
     level2link.innerHTML = "Guess again!";
     level2link.style.display = "block";
    level2link.style.fontSize = "40px";
   }
+  
 }
 </script>
     <button onclick="criminal();" class="guess">Guess the criminal</button>
