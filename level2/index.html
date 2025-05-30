@@ -12,7 +12,7 @@
     </div>
     <script>
 var typed = new Typed(".auto-type", {
-strings: ["Congratulations on making it to level 2! Head Detective Cadet will inform you on your next case.", "Head Detective Cadet: At 2:00 AM the towns museum's alarm was triggered, At 2:06 AM  police arrived at scene, and no one was found. I will give you my notes to further set the scene for you", "The list of suspects we gathered are: Devyn Dahmer, Glifard Gliff, and Williams Dej"], 
+strings: ["Congratulations on making it to level 2! Head Detective Cadet will inform you on your next case.", "Head Detective Cadet: At 2:00 AM the town museum's alarm was triggered, At 2:06 AM  police arrived at scene, and no one was found. I will give you my notes to further set the scene for you", "The list of suspects we gathered are: Devyn Dahmer, Glifard Gliff, and Williams Dej"], 
   typeSpeed: 30,
   fadeOut: true,
   fadeOutClass: 'type-fade-out',
@@ -54,7 +54,7 @@ function criminal() {
   let guess = prompt("Guess the criminal");
   let level3link = document.getElementById("level3link");
 
-  if (guess === "Devyn Dahmer") {
+  if (guess === "Devyn Dahmer" || "devyn dahmer") {
     level3link.innerHTML = "<a href='../level3/index.html'>Good Job! Click here to continue</a>";
     level3link.style.display = "block";
     level3link.style.fontSize = "24px"; // Set font size here
